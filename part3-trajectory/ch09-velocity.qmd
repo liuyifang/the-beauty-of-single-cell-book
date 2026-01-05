@@ -1,0 +1,18 @@
+# RNA Velocity：细胞的"未来" {#sec-velocity}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中，敬请期待。
+:::
+
+## 预告内容
+
+- RNA velocity的"烤面包"类比
+- 未剪接RNA vs 已剪接RNA
+- scVelo的动态模型
+- 速度流向图的绘制
+- 参数调优经验
+
+---
+
+**下一章：** [CytoTRACE：分化潜能评估](ch10-cytotrace.qmd)

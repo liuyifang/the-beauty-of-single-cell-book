@@ -1,0 +1,83 @@
+# 附录A：配色方案大全 {#sec-colors .unnumbered}
+
+本附录收集了单细胞可视化中常用的配色方案。
+
+## Nature/Cell/Science 常用配色
+
+### NPG (Nature Publishing Group)
+
+```{r}
+#| label: npg-colors
+#| eval: false
+
+# ggsci 包提供的 NPG 配色
+library(ggsci)
+pal_npg()(10)
+
+# 手动定义
+npg_colors <- c(
+  "#E64B35", "#4DBBD5", "#00A087", "#3C5488",
+  "#F39B7F", "#8491B4", "#91D1C2", "#DC0000",
+  "#7E6148", "#B09C85"
+)
+```
+
+### Lancet
+
+```{r}
+#| label: lancet-colors
+#| eval: false
+
+lancet_colors <- c(
+  "#00468B", "#ED0000", "#42B540", "#0099B4",
+  "#925E9F", "#FDAF91", "#AD002A", "#ADB6B6"
+)
+```
+
+## 连续型配色
+
+### Viridis 系列
+
+```{r}
+#| label: viridis-colors
+#| eval: false
+
+library(viridis)
+
+# 推荐用于 FeaturePlot
+viridis(100)      # 默认
+magma(100)        # 适合深色背景
+plasma(100)       # 高对比度
+inferno(100)      # 适合热力图
+```
+
+### 发散型配色（Heatmap用）
+
+```{r}
+#| label: diverging-colors
+#| eval: false
+
+library(RColorBrewer)
+
+# 蓝-白-红（最常用）
+brewer.pal(11, "RdBu")
+
+# 紫-白-绿
+brewer.pal(11, "PRGn")
+```
+
+## 配色禁忌
+
+::: {.callout-warning}
+## 不要使用
+
+1. **彩虹色阶**：人眼对不同颜色的感知不均匀
+2. **红绿搭配**：约8%男性有红绿色盲
+3. **默认ggplot2配色**：区分度不够
+:::
+
+## 配色工具
+
+- [ColorBrewer](https://colorbrewer2.org/)
+- [Coolors](https://coolors.co/)
+- [Adobe Color](https://color.adobe.com/)

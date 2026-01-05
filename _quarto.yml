@@ -1,0 +1,90 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "细胞之美"
+  subtitle: "R语言单细胞可视化从原理到实践"
+  author: "刘一方"
+  date: today
+  date-format: "YYYY年M月D日"
+  
+  repo-url: https://github.com/liuyifang/scviz-book
+  repo-actions: [edit, issue]
+  sharing: [twitter, facebook, linkedin]
+  
+  sidebar:
+    style: docked
+    search: true
+  
+  page-footer:
+    left: |
+      《细胞之美》由 [刘一方](https://github.com/liuyifang) 创作
+    right: |
+      本书使用 [Quarto](https://quarto.org/) 构建
+  
+  chapters:
+    - index.qmd
+    - intro.qmd
+    
+    - part: "第一部分：降维与散点图"
+      chapters:
+        - part1-dimred/ch01-pca.qmd
+        - part1-dimred/ch02-umap.qmd
+        - part1-dimred/ch03-tsne.qmd
+    
+    - part: "第二部分：表达量可视化"
+      chapters:
+        - part2-expression/ch04-featureplot.qmd
+        - part2-expression/ch05-dotplot.qmd
+        - part2-expression/ch06-heatmap.qmd
+        - part2-expression/ch07-violin.qmd
+    
+    - part: "第三部分：轨迹与动态"
+      chapters:
+        - part3-trajectory/ch08-monocle.qmd
+        - part3-trajectory/ch09-velocity.qmd
+        - part3-trajectory/ch10-cytotrace.qmd
+    
+    - part: "第四部分：细胞通讯"
+      chapters:
+        - part4-comm/ch11-cellchat.qmd
+        - part4-comm/ch12-commot.qmd
+    
+    - part: "附录"
+      chapters:
+        - appendix/colors.qmd
+        - appendix/checklist.qmd
+    
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    code-fold: true
+    code-tools: true
+    code-copy: true
+    code-line-numbers: true
+    highlight-style: github
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    link-external-newwindow: true
+    
+  pdf:
+    documentclass: scrbook
+    papersize: a4
+    toc: true
+    number-sections: true
+    colorlinks: true
+    
+execute:
+  freeze: auto
+  warning: false
+  message: false
+
+lang: zh

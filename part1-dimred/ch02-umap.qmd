@@ -1,0 +1,65 @@
+# UMAP：看见细胞群落 {#sec-umap}
+
+::: {.callout-tip}
+## B站视频
+本章对应视频：[EP03 UMAP：为什么你的图总是不好看？](https://bilibili.com/xxx)
+:::
+
+## 科研品味：什么时候用UMAP？
+
+翻开2020年后的Nature、Cell，几乎每篇单细胞文章的Figure 1都是UMAP。
+
+**应该用UMAP：** 细胞类型展示、基因表达分布、批次效应校正对比
+
+**不应该用UMAP：** 强调全局距离、精确轨迹推断、少量细胞(<500)
+
+## 数学原理
+
+UMAP的核心思想：**在高维和低维空间分别构建图，让两个图尽可能相似**。
+
+高维相似度定义：
+$$
+v_{j|i} = \exp\left(-\frac{d(x_i, x_j) - \rho_i}{\sigma_i}\right)
+$$
+
+## 参数详解
+
+### n_neighbors（最重要）
+
+```{r}
+#| eval: false
+# 小值强调局部，大值保留全局
+sobj <- RunUMAP(sobj, dims = 1:30, n.neighbors = 30)
+```
+
+| 细胞数 | 建议n_neighbors |
+|--------|-----------------|
+| < 5000 | 15-30 |
+| > 50000 | 30-50 |
+
+## Nature级UMAP
+
+```{r}
+#| eval: false
+nature_colors <- c("#E64B35", "#4DBBD5", "#00A087", "#3C5488",
+                   "#F39B7F", "#8491B4", "#91D1C2", "#DC0000")
+
+p <- DimPlot(sobj, cols = nature_colors, pt.size = 0.1,
+             label = TRUE, label.size = 3, repel = TRUE) +
+  NoAxes() +
+  theme(legend.position = "right",
+        plot.title = element_blank())
+
+ggsave("umap_nature.pdf", p, width = 6, height = 5)
+```
+
+### 出版级checklist
+
+- [ ] 点大小：0.1-0.3
+- [ ] 去掉坐标轴：NoAxes()
+- [ ] 标签不重叠：repel = TRUE
+- [ ] 分辨率300dpi，PDF矢量格式
+
+---
+
+**下一章：** [t-SNE：局部结构的守护者](ch03-tsne.qmd)

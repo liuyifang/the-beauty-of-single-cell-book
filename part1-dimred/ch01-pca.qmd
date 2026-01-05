@@ -1,0 +1,50 @@
+# PCA：降维的起点 {#sec-pca}
+
+::: {.callout-tip}
+## B站视频
+本章对应视频：[EP02 PCA：为什么它是所有降维的基础？](https://bilibili.com/xxx)
+:::
+
+## 为什么要学PCA？
+
+答案是：**UMAP的输入就是PCA的结果**。
+
+打开Seurat的`RunUMAP`函数，你会发现它的第一个参数是`dims = 1:30`——这就是前30个主成分。
+
+## 科研品味：什么时候用PCA？
+
+**应该展示PCA的场景：**
+
+1. **批次效应检查**：PC1或PC2被批次主导
+2. **质控展示**：去除低质量细胞前后的差异
+3. **方法论文章**：展示方法在保留原始结构方面的表现
+
+## 数学原理
+
+设数据矩阵为 $X \in \mathbb{R}^{n \times p}$，第一主成分满足：
+
+$$
+w_1 = \arg\max_{||w||=1} w^T \Sigma w
+$$
+
+## 从零实现PCA
+
+```{r}
+#| label: pca-scratch
+#| code-fold: false
+
+my_pca <- function(X, n_components = 2) {
+  X_centered <- scale(X, center = TRUE, scale = FALSE)
+  cov_matrix <- cov(X_centered)
+  eigen_result <- eigen(cov_matrix)
+  loadings <- eigen_result$vectors[, 1:n_components]
+  scores <- X_centered %*% loadings
+  
+  list(scores = scores, loadings = loadings,
+       var_explained = eigen_result$values / sum(eigen_result$values))
+}
+```
+
+---
+
+**下一章：** [UMAP：看见细胞群落](ch02-umap.qmd)

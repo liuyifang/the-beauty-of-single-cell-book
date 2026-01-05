@@ -1,0 +1,24 @@
+# Quarto
+/.quarto/
+/_site/
+/docs/
+_freeze/
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# macOS
+.DS_Store
+
+# Data files (too large)
+data/*.rds
+data/*.h5ad
+data/*.h5
+data/*.csv.gz
+
+# Rendered output
+*_files/

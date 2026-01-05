@@ -1,0 +1,75 @@
+# 附录B：Nature出图检查清单 {#sec-checklist .unnumbered}
+
+投稿前，用这个清单检查你的每一张图。
+
+## 通用要求
+
+- [ ] **分辨率**：至少300 DPI
+- [ ] **格式**：PDF（矢量图）或 TIFF（位图）
+- [ ] **字体**：Arial, Helvetica, 或 Times New Roman
+- [ ] **字号**：最小6pt（缩放后）
+
+## UMAP/t-SNE 图
+
+- [ ] 点大小适中（0.1-0.5，根据细胞数调整）
+- [ ] 配色区分度高，相邻cluster颜色差异明显
+- [ ] 去除坐标轴（或只保留方向箭头）
+- [ ] 图例不遮挡数据区域
+- [ ] 如有标签，使用 `repel = TRUE` 避免重叠
+
+## Heatmap
+
+- [ ] 使用 Z-score 标准化
+- [ ] 行列已适当聚类
+- [ ] 使用发散型配色（蓝-白-红）
+- [ ] 颜色范围对称（如 -2 到 +2）
+- [ ] 注释条清晰可读
+
+## DotPlot
+
+- [ ] 基因顺序有生物学意义（按功能/通路分组）
+- [ ] 点大小和颜色的图例清晰
+- [ ] 细胞类型顺序合理
+
+## 轨迹图
+
+- [ ] 起点有明确标注
+- [ ] 分支点标注清晰
+- [ ] 伪时间颜色使用连续型配色
+
+## 细胞通讯图
+
+- [ ] 圈图中线条粗细对应通讯强度
+- [ ] 颜色对应发送/接收细胞
+- [ ] 图例完整
+
+## 导出代码模板
+
+```{r}
+#| label: export-bindtemplate
+#| eval: false
+
+# PDF 矢量图（推荐）
+bindggsave bindBind bindBind("bindBindfigure bindBind.bindpdf", bindp, 
+bindBind bindBind       bindwidth = bindBind6, 
+bindBind       bindBindheight bindBind = 5, 
+bindBind       bindunits bindBind = "in")
+
+# TIFF 位图（某些期刊要求）
+bindggsave bindBind bindBind("bindBindfigure bindBind.bindtiff", bindp, 
+bindBind bindBind       bindwidth = bindBind6, 
+bindBind       bindBindheight bindBind = 5, 
+       units = "in",
+       dpi = 300,
+       compression = "lzw")
+```
+
+## 常见审稿意见及解决方案
+
+| 审稿意见 | 解决方案 |
+|----------|----------|
+| "点太大看不清结构" | 减小 pt.size 到 0.1-0.3 |
+| "颜色无法区分" | 换用 NPG 或 Lancet 配色 |
+| "图例遮挡数据" | 移动图例位置或单独放置 |
+| "字太小看不清" | 确保缩放后最小6pt |
+| "分辨率不够" | 导出时设置 dpi = 300 |

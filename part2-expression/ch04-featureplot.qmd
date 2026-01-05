@@ -1,0 +1,18 @@
+# FeaturePlot：给细胞上色 {#sec-featureplot}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中，敬请期待。
+:::
+
+## 预告内容
+
+- 色彩理论基础
+- 为什么不要用彩虹色阶
+- Cynthia Brewer与ColorBrewer的故事
+- 连续型vs离散型配色选择
+- 空间转录组的FeaturePlot
+
+---
+
+**下一章：** [DotPlot：双编码的艺术](ch05-dotplot.qmd)

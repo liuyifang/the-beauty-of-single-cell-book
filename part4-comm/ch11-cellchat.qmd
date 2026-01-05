@@ -1,0 +1,18 @@
+# CellChat：配受体网络 {#sec-cellchat}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中，敬请期待。
+:::
+
+## 预告内容
+
+- 细胞通讯的生物学背景
+- CellChatDB数据库
+- 圈图的绘制与解读
+- 气泡图展示L-R对
+- 信号通路层级展示
+
+---
+
+**下一章：** [COMMOT：空间通讯流](ch12-commot.qmd)

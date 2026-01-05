@@ -1,0 +1,17 @@
+# VlnPlot：分布的故事 {#sec-violin}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中，敬请期待。
+:::
+
+## 预告内容
+
+- 核密度估计原理
+- Silverman 1986年的带宽公式
+- Violin vs Boxplot vs RidgePlot
+- 堆叠小提琴图
+
+---
+
+**下一章：** [Monocle3：拟时序分析](../part3-trajectory/ch08-monocle.qmd)
