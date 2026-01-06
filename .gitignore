@@ -22,3 +22,5 @@ data/*.csv.gz
 
 # Rendered output
 *_files/
+
+**/*.quarto_ipynb

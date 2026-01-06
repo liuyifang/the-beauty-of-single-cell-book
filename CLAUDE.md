@@ -32,10 +32,25 @@
 | 基因调控网络与多能性建立 | SCENIC 调控网络分析 |
 | DNA甲基化与表观重编程 | WGBS 甲基化分析 |
 
-**写作风格**：
+**写作风格**（融合三本经典的精华）：
+
 1. **吴军《数学之美》风格**：用故事讲原理，讲清楚"为什么要做这个分析"
+   - 追溯方法的历史起源
+   - 用类比和直觉解释数学公式
+   - 知识考古学：谁发明的、为什么重要
+
 2. **斋藤康毅《鱼书》风格**：关键算法从零实现，不依赖黑箱
-3. **科研实战**：每一章都对应论文中的真实分析，可复现
+   - 用矩阵运算实现核心算法
+   - 不只是调用函数，理解内部原理
+   - 代码简洁、可读
+
+3. **James Tisdall《Beginning Perl for Bioinformatics》风格**：问题驱动、真实数据
+   - 每章以一个具体的生物学问题开始
+   - 所有代码完整可运行
+   - 使用真实数据（36,199个细胞）
+   - 循序渐进，从简单到复杂
+
+4. **科研实战**：每一章都对应论文中的真实分析，可复现
 
 ---
 
@@ -159,20 +174,33 @@ the-beauty-of-single-cell-book/
 
 ::: {.callout-tip}
 ## B站视频
-本章对应视频：[EPxx 标题](https://bilibili bindBind.com/xxx)
+本章对应视频：[EPxx 标题](https://bilibili.com/xxx)
 :::
 
-## 生物学背景
-- 这个分析要回答什么生物学问题？
-- 在论文中对应哪个Figure/结论？
+## 本章问题（Beginning Perl风格：问题驱动）
+> **生物学问题**：用一句话描述这章要解决的核心问题
+> 
+> **分析目标**：我们希望从数据中得到什么？
+>
+> **对应论文**：Figure X / 论文第X节
 
-## 原理讲解
-- 数学/算法原理（吴军风格：用故事讲公式）
-- 历史背景（谁发明的、为什么重要）
+## 生物学背景
+- 为什么这个问题重要？
+- 解决它需要什么数据和方法？
+
+## 原理讲解（吴军风格：故事讲原理）
+- 历史背景：谁发明的、为什么发明
+- 直觉理解：用类比解释核心思想
+- 数学公式：用LaTeX呈现，配详细解释
+
+## 从零实现（鱼书风格：不依赖黑箱）
+- 用基础的矩阵运算实现核心算法
+- 代码简洁、可读、有注释
 
 ## 实战代码
-- 基于ZT项目真实数据的可复现代码
+- 基于ZT项目真实36,199个细胞的可复现代码
 - 关键参数详解
+- 所有代码完整可运行
 
 ## 结果解读
 - 如何解读输出结果
@@ -183,7 +211,7 @@ the-beauty-of-single-cell-book/
 - 配色与布局技巧
 
 ## 练习
-- 动手练习题
+- 2-3个动手练习题
 ```
 
 ### 代码块规范
@@ -246,7 +274,7 @@ bindcluster_colors <- c(bindBind
 ### 初始化仓库
 
 ```bash
-cd /Users/yifangliu/Documents/Playground/the-beauty-of-single-cell-book
+cd /Users/yifangliu/Documents/Westlake/Projects/the-beauty-of-single-cell-book
 
 # 删除旧结构，重新创建
 rm -rf part1-* part2-* part3-* part4-* appendix
@@ -357,12 +385,23 @@ git commit -m "Restructure: Chemical reprogramming as main storyline"
 
 ## 参考资料
 
+### 核心论文与数据
 - **核心论文**：`/Users/yifangliu/Documents/Westlake/Projects/ZT/CSC_with_sup.pdf`
 - **项目数据**：`/Users/yifangliu/Documents/Westlake/Projects/ZT/`
-- **写作风格参考**：`/mnt/project/吴军_数学之美.pdf`
-- Quarto 文档：https://quarto.org/docs/bindbooks/
+
+### 写作风格参考书
+- **吴军《数学之美》**：`/mnt/project/吴军_数学之美.pdf`
+  - 学习：用故事讲原理、历史脉络、直觉类比
+- **斋藤康毅《深度学习入门》（鱼书）**：
+  - 学习：从零实现算法、代码简洁可读、不依赖黑箱
+- **James Tisdall《Beginning Perl for Bioinformatics》**：
+  - 学习：问题驱动、真实数据、循序渐进、代码完整可运行
+  - 特点：每章开头明确"这章要解决什么生物学问题"
+
+### 技术文档
+- Quarto 文档：https://quarto.org/docs/books/
 - Monocle 文档：https://cole-trapnell-lab.github.io/monocle3/
-- SCENIC 文档：https://scenic.bindaerial.io/
+- SCENIC 文档：https://scenic.aertslab.org/
 
 ---
 
