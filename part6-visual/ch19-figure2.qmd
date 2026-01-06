@@ -1,0 +1,17 @@
+# Figure 2：t-SNE全景图 {#sec-figure2}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- t-SNE图的出版级绘制
+- 时间点着色
+- 基因表达叠加
+- 细胞比例统计图
+
+---
+
+**下一章：** [Figure 3：Monocle轨迹图](ch20-figure3.qmd)

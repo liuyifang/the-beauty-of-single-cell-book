@@ -4,12 +4,12 @@ project:
 
 book:
   title: "细胞之美"
-  subtitle: "R语言单细胞可视化从原理到实践"
+  subtitle: "从化学重编程看单细胞分析"
   author: "刘一方"
   date: today
   date-format: "YYYY年M月D日"
   
-  repo-url: https://github.com/liuyifang/scviz-book
+  repo-url: https://github.com/liuyifang/the-beauty-of-single-cell-book
   repo-actions: [edit, issue]
   sharing: [twitter, facebook, linkedin]
   
@@ -27,34 +27,51 @@ book:
     - index.qmd
     - intro.qmd
     
-    - part: "第一部分：降维与散点图"
+    - part: "第一部分：生物学背景"
       chapters:
-        - part1-dimred/ch01-pca.qmd
-        - part1-dimred/ch02-umap.qmd
-        - part1-dimred/ch03-tsne.qmd
+        - part1-background/ch01-reprog.qmd
+        - part1-background/ch02-chemical.qmd
+        - part1-background/ch03-question.qmd
     
-    - part: "第二部分：表达量可视化"
+    - part: "第二部分：数据获取与预处理"
       chapters:
-        - part2-expression/ch04-featureplot.qmd
-        - part2-expression/ch05-dotplot.qmd
-        - part2-expression/ch06-heatmap.qmd
-        - part2-expression/ch07-violin.qmd
+        - part2-data/ch04-10x.qmd
+        - part2-data/ch05-cellranger.qmd
+        - part2-data/ch06-qc.qmd
     
-    - part: "第三部分：轨迹与动态"
+    - part: "第三部分：重编程轨迹重建"
       chapters:
-        - part3-trajectory/ch08-monocle.qmd
-        - part3-trajectory/ch09-velocity.qmd
-        - part3-trajectory/ch10-cytotrace.qmd
+        - part3-trajectory/ch07-pca.qmd
+        - part3-trajectory/ch08-tsne.qmd
+        - part3-trajectory/ch09-monocle.qmd
+        - part3-trajectory/ch10-branch.qmd
     
-    - part: "第四部分：细胞通讯"
+    - part: "第四部分：发现2C-like程序"
       chapters:
-        - part4-comm/ch11-cellchat.qmd
-        - part4-comm/ch12-commot.qmd
+        - part4-2clike/ch11-deg.qmd
+        - part4-2clike/ch12-2cgenes.qmd
+        - part4-2clike/ch13-network.qmd
+        - part4-2clike/ch14-scenic.qmd
+    
+    - part: "第五部分：表观遗传学验证"
+      chapters:
+        - part5-epigenome/ch15-wgbs.qmd
+        - part5-epigenome/ch16-methylation.qmd
+        - part5-epigenome/ch17-early.qmd
+    
+    - part: "第六部分：出版级可视化"
+      chapters:
+        - part6-visual/ch18-figure1.qmd
+        - part6-visual/ch19-figure2.qmd
+        - part6-visual/ch20-figure3.qmd
+        - part6-visual/ch21-figure4.qmd
+        - part6-visual/ch22-figure5.qmd
     
     - part: "附录"
       chapters:
         - appendix/colors.qmd
         - appendix/checklist.qmd
+        - appendix/code.qmd
     
     - references.qmd
 

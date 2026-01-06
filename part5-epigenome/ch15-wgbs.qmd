@@ -1,0 +1,17 @@
+# WGBS：全基因组甲基化测序 {#sec-wgbs}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- 亚硫酸盐测序原理
+- Bismark比对流程
+- 甲基化calling
+- 全基因组甲基化水平计算
+
+---
+
+**下一章：** [DNA甲基化的全局丢失](ch16-methylation.qmd)

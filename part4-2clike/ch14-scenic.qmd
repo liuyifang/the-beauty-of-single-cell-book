@@ -1,0 +1,17 @@
+# SCENIC：转录因子调控网络 {#sec-scenic}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- SCENIC算法原理
+- Regulon的概念
+- Oct4、Nanog、Sox17调控子
+- 调控网络可视化
+
+---
+
+**下一章：** [WGBS：全基因组甲基化测序](../part5-epigenome/ch15-wgbs.qmd)

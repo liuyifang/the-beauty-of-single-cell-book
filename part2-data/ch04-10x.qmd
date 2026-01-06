@@ -1,0 +1,18 @@
+# 10x Genomics单细胞测序原理 {#sec-10x}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- 液滴微流控技术
+- GEM生成原理
+- UMI（Unique Molecular Identifier）
+- 细胞Barcoding
+- Chromium系统
+
+---
+
+**下一章：** [Cell Ranger数据处理](ch05-cellranger.qmd)

@@ -1,0 +1,17 @@
+# Figure 4：2C-like程序热图 {#sec-figure4}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- 差异表达热图
+- 火山图与MA图
+- 基因网络图
+- Regulon活性热图
+
+---
+
+**下一章：** [Figure 5：WGBS甲基化图](ch22-figure5.qmd)

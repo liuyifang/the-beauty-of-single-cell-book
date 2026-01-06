@@ -1,12 +1,12 @@
-# 细胞之美：R语言单细胞可视化从原理到实践
+# 细胞之美：从化学重编程看单细胞分析
 
-[![Quarto Publish](https://github.com/liuyifang/scviz-book/actions/workflows/publish.yml/badge.svg)](https://github.com/liuyifang/scviz-book/actions/workflows/publish.yml)
+[![Quarto Publish](https://github.com/liuyifang/the-beauty-of-single-cell-book/actions/workflows/publish.yml/badge.svg)](https://github.com/liuyifang/the-beauty-of-single-cell-book/actions/workflows/publish.yml)
 
-> 让每一张单细胞图都讲述一个故事
+> 一个 Cell Stem Cell 项目的完整生物信息学实战
 
 ## 📖 在线阅读
 
-**电子书地址**：[https://liuyifang.github.io/scviz-book](https://liuyifang.github.io/scviz-book)
+**电子书地址**：[https://liuyifang.github.io/the-beauty-of-single-cell-book](https://liuyifang.github.io/the-beauty-of-single-cell-book)
 
 ## 🎬 配套视频
 
@@ -14,81 +14,87 @@
 
 ## 📚 本书特色
 
-### 三层讲解框架
+### 以真实项目为主线
 
-1. **科研品味**：为什么选这种图？什么时候不该用？
-2. **数学原理**：用故事讲公式，用历史讲脉络
-3. **Nature级出图**：配色、布局、分辨率的出版标准
+整本书围绕一篇 **Cell Stem Cell 2018** 论文展开：
+
+> Zhao T, Fu Y, Zhu J, **Liu Y**, et al. Single-Cell RNA-Seq Reveals Dynamic Early Embryonic-like Programs during Chemical Reprogramming. *Cell Stem Cell* 23, 31–45 (2018)
+
+你将看到36,199个真实细胞在化学重编程过程中的命运变化。
+
+### 双轨并行
+
+| 干细胞生物学 | 生物信息分析 |
+|-------------|-------------|
+| 化学重编程的原理 | 单细胞数据预处理 |
+| MEF → XEN-like → CiPSC | t-SNE/UMAP聚类 |
+| 2C-like程序的发现 | Monocle轨迹推断 |
+| DNA甲基化重编程 | WGBS分析 |
 
 ### 写作风格
 
-- **吴军《数学之美》风格**：知识考古学，追溯每个方法的起源
-- **斋藤康毅《鱼书》风格**：从零实现，不依赖黑箱
+- **吴军《数学之美》风格**：用故事讲原理
+- **斋藤康毅《鱼书》风格**：关键算法从零实现
 
 ## 📋 目录
 
-### 第一部分：降维与散点图
-- [x] 第1章：PCA——降维的起点
-- [x] 第2章：UMAP——看见细胞群落
-- [ ] 第3章：t-SNE——局部结构的守护者
+### 第一部分：生物学背景
+- [ ] 第1章：重编程——从山中伸弥到化学诱导
+- [ ] 第2章：化学重编程的三个阶段
+- [ ] 第3章：科学问题——什么驱动了多能性获得？
 
-### 第二部分：表达量可视化
-- [ ] 第4章：FeaturePlot——给细胞上色
-- [ ] 第5章：DotPlot——双编码的艺术
-- [ ] 第6章：Heatmap——表达矩阵的全景
-- [ ] 第7章：VlnPlot——分布的故事
+### 第二部分：数据获取与预处理
+- [ ] 第4章：10x Genomics单细胞测序原理
+- [ ] 第5章：Cell Ranger数据处理
+- [ ] 第6章：质控——识别并去除低质量细胞
 
-### 第三部分：轨迹与动态
-- [ ] 第8章：Monocle3——拟时序分析
-- [ ] 第9章：RNA Velocity——细胞的"未来"
-- [ ] 第10章：CytoTRACE——分化潜能评估
+### 第三部分：重编程轨迹重建
+- [ ] 第7章：PCA——为什么它是一切的基础
+- [ ] 第8章：t-SNE——看见6个细胞群落
+- [ ] 第9章：Monocle——重建伪时序轨迹
+- [ ] 第10章：分支点——成功与失败的分叉
 
-### 第四部分：细胞通讯
-- [ ] 第11章：CellChat——配受体网络
-- [ ] 第12章：COMMOT——空间通讯流
+### 第四部分：发现2C-like程序
+- [ ] 第11章：差异表达——寻找关键基因
+- [ ] 第12章：Zscan4家族——2C胚胎的分子标记
+- [ ] 第13章：基因网络——WGCNA与相关性分析
+- [ ] 第14章：SCENIC——转录因子调控网络
+
+### 第五部分：表观遗传学验证
+- [ ] 第15章：WGBS——全基因组甲基化测序
+- [ ] 第16章：DNA甲基化的全局丢失
+- [ ] 第17章：早期胚胎样的表观状态
+
+### 第六部分：出版级可视化
+- [ ] 第18-22章：论文Figure 1-5的完整重现
 
 ### 附录
 - [ ] 附录A：配色方案大全
 - [ ] 附录B：Nature出图检查清单
+- [ ] 附录C：完整代码汇总
 
 ## 🛠️ 本地构建
 
 ```bash
-# 克隆仓库
-git clone https://github.com/liuyifang/scviz-book.git
-cd scviz-book
-
-# 安装 Quarto (如果没有)
-# macOS: brew install quarto
-# 其他系统: https://quarto.org/docs/get-started/
-
-# 预览
+git clone https://github.com/liuyifang/the-beauty-of-single-cell-book.git
+cd the-beauty-of-single-cell-book
 quarto preview
-
-# 构建
-quarto render
 ```
 
 ## 📝 参与贡献
 
 欢迎提交 Issue 和 Pull Request！
 
-- **发现错误**：请提交 Issue
-- **内容建议**：请提交 Issue 或在B站评论
-- **代码改进**：欢迎 PR
-
 ## 📜 许可证
 
-本书内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可证。
-
-代码部分采用 MIT 许可证。
+- 内容：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- 代码：MIT License
 
 ## 👤 作者
 
-**刘一方**
+**刘一方** - Cell Stem Cell 2018 共同第一作者
 
 - GitHub: [@liuyifang](https://github.com/liuyifang)
-- B站: [待填充]
 
 ---
 

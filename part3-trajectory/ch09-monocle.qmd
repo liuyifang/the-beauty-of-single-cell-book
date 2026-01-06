@@ -1,0 +1,18 @@
+# Monocle：重建伪时序轨迹 {#sec-monocle}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- Monocle 2的DDRTree算法
+- 伪时序的概念
+- 论文Figure 3的重现
+- 轨迹分支的识别
+- 参数选择经验
+
+---
+
+**下一章：** [分支点：成功与失败的分叉](ch10-branch.qmd)

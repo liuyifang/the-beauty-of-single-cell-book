@@ -1,0 +1,17 @@
+# 基因网络：WGCNA与相关性分析 {#sec-network}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- WGCNA原理
+- 基因相关性网络
+- 中间子网络的发现
+- Cytoscape可视化
+
+---
+
+**下一章：** [SCENIC：转录因子调控网络](ch14-scenic.qmd)

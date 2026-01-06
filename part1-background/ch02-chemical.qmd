@@ -1,0 +1,18 @@
+# 化学重编程的三个阶段 {#sec-chemical}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- Stage I：MEF → XEN-like
+- Stage II：XEN-like → 过渡细胞
+- Stage III：过渡细胞 → CiPSCs
+- 小分子化合物的作用机制
+- N2B27-SII高效体系
+
+---
+
+**下一章：** [科学问题：什么驱动了多能性获得？](ch03-question.qmd)

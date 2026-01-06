@@ -1,0 +1,17 @@
+# Figure 3：Monocle轨迹图 {#sec-figure3}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- 轨迹分支图的绘制
+- 小提琴图展示基因表达
+- 热图的基因聚类
+- GO富集分析结果展示
+
+---
+
+**下一章：** [Figure 4：2C-like程序热图](ch21-figure4.qmd)

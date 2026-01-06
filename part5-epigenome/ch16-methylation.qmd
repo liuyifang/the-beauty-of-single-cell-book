@@ -1,0 +1,17 @@
+# DNA甲基化的全局丢失 {#sec-methylation}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- pZscan4c-Em+细胞的分选
+- 全局DNA低甲基化（~4%）
+- 启动子、CpG岛的甲基化变化
+- 与XEN-like和CiPSCs的对比
+
+---
+
+**下一章：** [早期胚胎样的表观状态](ch17-early.qmd)

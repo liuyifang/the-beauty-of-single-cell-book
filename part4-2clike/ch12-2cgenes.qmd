@@ -1,0 +1,17 @@
+# Zscan4家族：2C胚胎的分子标记 {#sec-2cgenes}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- Zscan4家族的发现
+- Tcstv1、Dppa家族
+- 2C-like程序的定义
+- 与真实2C胚胎的比较
+
+---
+
+**下一章：** [基因网络：WGCNA与相关性分析](ch13-network.qmd)

@@ -1,0 +1,16 @@
+# 附录C：完整代码汇总 {#sec-code .unnumbered}
+
+::: {.callout-warning}
+## 待完成
+本附录正在整理中。
+:::
+
+## 预告内容
+
+- 数据预处理完整流程
+- t-SNE/UMAP分析代码
+- Monocle轨迹分析代码
+- 差异表达分析代码
+- SCENIC分析代码
+- WGBS分析代码
+- 所有图表绘制代码

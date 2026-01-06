@@ -1,0 +1,18 @@
+# t-SNE：看见6个细胞群落 {#sec-tsne}
+
+::: {.callout-warning}
+## 待完成
+本章正在撰写中。
+:::
+
+## 预告内容
+
+- t-SNE的数学原理
+- KL散度与梯度下降
+- perplexity参数的意义
+- 论文Figure 2的重现
+- 6个细胞群落的识别
+
+---
+
+**下一章：** [Monocle：重建伪时序轨迹](ch09-monocle.qmd)
